@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Alex, CV, resume">
     <meta name="description" content="Это сайт - резюме Александры Радецкой">
+    <link rel="stylesheet" href="styles.css">
     <title>Alex Resume</title>
 </head>
 <body>
-    
+    <div class="container">
+    <div class="info">
+    <img scr="photo.jpg" alt="Александра Радецкая" class="avatar">
+
+    <div class="info-text">
     <h1>Радецкая Александра</h1>
-    <img scr="1.jpg" alt="Александра Радецкая" width="200">
+   
     <h2>Я инженер <strong>систем управления ЛА</strong> и начинающий программист</h2>
     <h3>Я люблю <em>путешествовать, заниматься спортом и творчеством</em></h3>
     <h4>Cписок социальных сетей:</h4>
@@ -20,22 +25,27 @@
     <a href="https://t.me/alex_alex_000" target="_blank">Telegram</a>
     |
     <a href="https://vk.com/away.php?to=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falexandra-radetskaya-821ba425b&cc_key=" target="_blank">LinkedIn</a>
-<h2>Мои хобби</h2>
-<ol>
+</div>
+</div>
+<div class="card bg-green">
+    <h2>Мои хобби</h2>
+<ol class="list">
     <li>Путешествия</li>
     <li>Творчество</li>
     <li>Гимнастика</li>
     <li>Фотография</li>
 </ol>
+</div>
+<div class="card bg-red">
 <h2>Опыт работы</h2>
-<table>
-   <thead>
+<table class="table">
+   <!-- <thead>
     <tr>
         <th>Название</th>
         <th>Должность</th>
         <th>Год</th>
     </tr>
-   </thead>
+   </thead> -->
    <tbody>
     <tr>
         <td>Техник</td>
@@ -54,25 +64,27 @@
     </tr>
    </tbody>
 </table>
-<h2>Связаться со мной</h2>
-<form action="/">
-    <div>
+</div>
+
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+    <div class="form-row">
+    <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Введите имя">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="email">Ваш email:</label>
         <textarea type="email" id="email" placeholder="Введите email">
     </div>
-    <div>
-    <textarea>
+</div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
-        <input id="message" cols="20" rows="5" placeholder="Введите сообщение...">
+        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение...">
     </textarea>
     </div>
-    <input type="submit" value="Отправить!">
+    <input class="btn" type="submit" value="Отправить!">
 </form>
 <br>
 <br>
@@ -80,6 +92,6 @@
 <br>
 <br>
 <br>
-
+</div>
 </body>
 </html> 
